@@ -1,0 +1,25 @@
+.button {
+  border: 1px solid #efefef;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: gray;
+}
+.buttonClick {
+  background-color: black;
+  color: white;
+}
+.buttonClick:hover {
+  background-color: black;
+}
+
+.square {
+  border-bottom: 1px solid black;
+  width: 100px;
+}
+
+.panal {
+  display: none;
+}

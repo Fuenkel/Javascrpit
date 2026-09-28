@@ -1,0 +1,24 @@
+.allot {
+  outline: 1px solid red;
+}
+
+.allotText {
+  color: red;
+}
+
+.loginArt {
+  color: white;
+  background-color: black;
+  border-radius: 8px;
+  border: 1px solid black;
+  width: 100px;
+  height: 40px;
+}
+
+.loginArt:hover {
+  background-color: gray;
+}
+
+.inputBox {
+  border-radius: 4px;
+}

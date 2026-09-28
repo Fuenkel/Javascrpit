@@ -1,0 +1,29 @@
+.dropdown {
+  padding: 4px 8px;
+  background-color: transparent;
+  border: 1px solid #efefef;
+  border-radius: 8px;
+}
+.list {
+  border: 1px solid #efefef;
+  padding: 6px;
+  width: fit-content;
+}
+
+.noShow {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.list > li {
+  list-style-type: none;
+}
+#dropdown_chevron {
+  transition: all 0.5s;
+}
+.down {
+  transform: rotate(180deg);
+}

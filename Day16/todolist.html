@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오늘 할 일</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="head">
+        <p class="head__date" id="today"></p>
+        <h1 class="head__title">오늘 할 일</h1>
+        <p class="head__progress" id="progress-text"></p>
+        <div class="bar" aria-hidden="true">
+          <span class="bar__fill" id="progress-bar"></span>
+        </div>
+      </header>
+
+      <form class="add" id="form">
+        <input
+          class="add__input"
+          id="txt"
+          placeholder="할 일을 적고 Enter"
+          aria-label="할 일"
+          autocomplete="off"
+          maxlength="80"
+        />
+        <button class="add__btn" id="add" disabled>추가</button>
+      </form>
+
+      <div class="filters" id="filters" role="group" aria-label="목록 보기">
+        <button
+          type="button"
+          data-filter="all"
+          data-empty-title="할 일이 없어요"
+          data-empty-sub="위 칸에 적고 Enter 를 누르면 여기에 쌓여요"
+          aria-pressed="true"
+        >
+          전체
+        </button>
+        <button
+          type="button"
+          data-filter="active"
+          data-empty-title="남은 일이 없어요"
+          data-empty-sub="오늘 몫은 다 끝냈어요"
+          aria-pressed="false"
+        >
+          남은 일
+        </button>
+        <button
+          type="button"
+          data-filter="done"
+          data-empty-title="아직 끝낸 일이 없어요"
+          data-empty-sub="체크한 일이 여기로 모여요"
+          aria-pressed="false"
+        >
+          끝낸 일
+        </button>
+      </div>
+
+      <ul class="list" id="list"></ul>
+
+      <!-- 지금 hidden에 의해서 p태그에 적어도 글씨가 기재되지않음 -->
+      <!-- 그러므로 빈 공간일 때, hidden을 없애는 것이 필요 -->
+      <!-- 동시에 전체/ 남은 일/ 끝낸 일의 배열? 혹은 클래스가 없을 때마다 empty 타이틀과 sub를 변경해줘야 된다. -->
+      <div class="empty" id="empty" hidden>
+        <p class="empty__title" id="empty-title"></p>
+        <p class="empty__sub" id="empty-sub"></p>
+      </div>
+
+      <!-- 이것도 마찬가지로 disabled를 없애주거나 살려주는 작업이 필요 -->
+      <footer class="foot">
+        <button class="foot__clear" id="clear" type="button" disabled>
+          끝낸 일 지우기
+        </button>
+      </footer>
+    </main>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

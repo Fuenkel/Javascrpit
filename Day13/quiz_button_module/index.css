@@ -1,0 +1,71 @@
+.tabMenu {
+  border: 1px solid red;
+  padding: 8px;
+  background-color: white;
+  width: 500px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonList {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  border-bottom: 1px solid red;
+  padding-bottom: 5px;
+}
+
+.contents > p {
+  padding: 0 5px;
+}
+.menu-tab {
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #efefef;
+}
+
+.tab {
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  padding: 8px 12px;
+  background-color: transparent;
+}
+
+.tab:hover {
+  background-color: #f4f4f5;
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
+.reviewList {
+  padding: 5px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.review {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.stars {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+}

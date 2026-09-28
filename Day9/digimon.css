@@ -1,0 +1,51 @@
+.viewTable {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid blue;
+}
+
+.card img {
+  width: 70%;
+  height: 70%;
+  margin: auto;
+  padding: 10px;
+}
+.digimonLevel {
+  flex: 1;
+  padding: 20px;
+}
+
+.inTraining {
+  color: purple;
+}
+
+.rookie {
+  color: pink;
+}
+
+.champion {
+  color: skyblue;
+}
+
+.ultimate {
+  color: orange;
+}
+
+.mega {
+  color: yellowgreen;
+}
+
+.digimonName {
+  flex: 2;
+  font-weight: bold;
+  color: blue;
+  padding: 20px;
+}

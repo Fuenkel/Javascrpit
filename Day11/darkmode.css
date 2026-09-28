@@ -1,0 +1,15 @@
+* {
+  transition: all 1s;
+}
+
+.button {
+  border: 1px solid efefef;
+  border-radius: 30px;
+  background-color: transparent;
+  padding: 4px 8px;
+}
+
+.dark {
+  color: white;
+  background-color: #26262d;
+}

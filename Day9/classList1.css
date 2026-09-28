@@ -1,0 +1,27 @@
+.timetable {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #efefef;
+}
+.schedule {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.day {
+  border: 1px solid #efefef;
+  flex: 3;
+  padding: 20px;
+  white-space: nowrap;
+}
+.time {
+  border: 1px solid #efefef;
+  flex: 7;
+  padding: 20px;
+}
+
+.today {
+  border-left: 1px solid blue;
+  font-weight: bold;
+}
