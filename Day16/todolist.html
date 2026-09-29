@@ -13,8 +13,21 @@
   <body>
     <main class="app">
       <header class="head">
-        <p class="head__date" id="today"></p>
-        <h1 class="head__title">오늘 할 일</h1>
+        <div class="head__date-bar">
+          <input
+            type="date"
+            class="head__date-input"
+            id="date-picker"
+            aria-label="날짜 선택"
+          />
+          <span class="head__date-text" id="today"></span>
+          <button type="button" class="head__today-btn" id="today-btn" hidden>
+            오늘
+          </button>
+        </div>
+
+        <!-- <p class="head__date" id="today"></p> -->
+        <h1 class="head__title" id="main-title">오늘 할 일</h1>
         <p class="head__progress" id="progress-text"></p>
         <div class="bar" aria-hidden="true">
           <span class="bar__fill" id="progress-bar"></span>
@@ -81,6 +94,6 @@
       </footer>
     </main>
 
-    <script type="module" src="main.js"></script>
+    <script type="module" src="main2.js"></script>
   </body>
 </html>

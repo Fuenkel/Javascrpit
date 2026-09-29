@@ -19,10 +19,6 @@ const updateUI = () => {
   checkFilter(ul);
 };
 
-textInput.addEventListener("input", (e) => {
-  buttonAbled.disabled = e.target.value.trim() === "";
-});
-
 // 뭔가가 입력되면 추가버튼의 disabeld가 지워진다.
 textInput.addEventListener("input", (e) => {
   buttonAbled.disabled = e.target.value.trim() == "";
@@ -58,16 +54,17 @@ buttonAbled.addEventListener("click", () => {
 ul.addEventListener("change", (e) => {
   if (e.target.classList.contains("item__check")) {
     const li = e.target.closest(".item");
-    li.classList.toggle("done", e.target.checked);
-  }
 
-  updateUI();
+    li.classList.toggle("done", e.target.checked);
+    updateUI();
+  }
 });
 
 // 단순 X 클릭시 생기는 것
 ul.addEventListener("click", (e) => {
   if (e.target.classList.contains("item__del")) {
     const li = e.target.closest(".item");
+
     li.remove();
     updateUI();
   }
