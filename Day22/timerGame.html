@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10초 딱 멈추기</title>
+    <link rel="stylesheet" href="timerGame.css" />
+    <script src="timerGame.js" defer></script>
+  </head>
+  <body>
+    <div class="game-card">
+      <!-- 상단 헤더 영역 -->
+      <div class="card-header">
+        <div class="title-group">
+          <span class="timer-icon">⏱️</span>
+          <h2 class="title">10초 딱 멈추기</h2>
+        </div>
+        <div class="best-record">최고 오차 <span id="best-score">-</span></div>
+      </div>
+
+      <!-- 타이머 디스플레이 영역 -->
+      <div class="display-box">
+        <!-- 
+        숫자 표시 요소: 
+        - 기본: 0.00 또는 카운트다운 숫자가 들어감
+        - 3초 후 ??.??로 변경 시 JS로 textContent 변경 또는 클래스 추가
+      -->
+        <div class="time-text" id="time-display">0.00</div>
+
+        <!-- 하단 설명/결과 문구 -->
+        <div class="sub-text" id="sub-display">10.00초에 딱 맞춰 보셈</div>
+      </div>
+
+      <!-- 하단 액션 버튼 -->
+      <!-- 상태에 따라 텍스트 변경: '시작', '멈춤', '다시' -->
+      <button class="action-btn" id="action-btn">시작</button>
+    </div>
+  </body>
+</html>

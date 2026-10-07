@@ -1,0 +1,125 @@
+/* 기본 리셋 및 폰트 설정 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+}
+
+/* 카드 전체 컨테이너 */
+.game-card {
+  width: 360px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* 헤더 영역 */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.timer-icon {
+  font-size: 1.1rem;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* 최고 오차 배지 */
+.best-record {
+  background-color: #f3f4f6;
+  color: #6b7280;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+/* 검은색 디스플레이 박스 */
+.display-box {
+  background-color: #0f172a; /* 어두운 네이비 계열 */
+  border-radius: 12px;
+  padding: 36px 16px 24px 16px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+}
+
+/* 타이머 숫자 */
+.time-text {
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.time-text-best {
+  color: greenyellow;
+}
+
+/* 비밀 표시 상태일 때 (??.??) 색상 조절을 위한 클래스 예시 */
+.time-text.hidden {
+  color: #334155; /* 어두운 그레이/블루 톤으로 숨김 처리 */
+}
+
+/* 하단 설명 텍스트 */
+.sub-text {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+/* 주황색 액션 버튼 */
+.action-btn {
+  width: 100%;
+  padding: 14px 0;
+  background-color: #ff6b00; /* 오렌지 컬러 */
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    transform 0.05s ease;
+}
+
+.action-btn:hover {
+  background-color: #e56000;
+}
+
+.action-btn:active {
+  transform: scale(0.99);
+}

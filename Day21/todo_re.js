@@ -12,10 +12,16 @@ add.addEventListener("click", () => {
     localStorage.setItem("todosRe", value);
     todolist.innerHTML = "";
     const data = localStorage.getItem("todosRe");
-    data.split(",").map((v) => {
+    data.split(",").forEach((v) => {
       const li = document.createElement("li");
       li.innerHTML = v;
       todolist.append(li);
     });
   }
 });
+
+const maptest = [1, 2, 3, 4, 5, 6, 7];
+
+const 바뀐배열 = maptest.forEach((v) => {});
+
+// [2,3,4,5,6,7,8]
